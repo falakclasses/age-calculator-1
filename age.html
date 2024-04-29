@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #age-calculator {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="date"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #result {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="age-calculator">
+        <h1>Age Calculator</h1>
+        <form>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="today">Today's Date:</label>
+            <input type="date" id="today" name="today" required>
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div id="result">
+            <p id="age"></p>
+            <p id="days-left"></p>
+        </div>
+    </div>
+    <script src="age2.html"></script>
+</body>
+</html>
